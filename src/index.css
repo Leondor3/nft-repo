@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+  
+.border-bottom {
+    @apply after:contents absolute bottom-0 left-0 w-full border-zinc-800 border-b
+}

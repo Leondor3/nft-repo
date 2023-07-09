@@ -8,13 +8,13 @@ import { MoreHorizontal, Flame } from "lucide-react";
 import FaceEvil from '/images/face-evil.jpg'
 export function TrendingCategory() {
     return (
-        <section className="relative pt-16 pb-60 bg-[#0f0f0f]">
+        <section className="relative pt-16 pb-60 bg-[#0f0f0f]" id="explore">
             <div className="container">
                 <div className="text-center">
                     <Title color="white" theme="h1" size="xl">Trending Categories</Title>
                 </div>
-                <div className="pt-16 flex justify-between">
-                    <div className="flex gap-4">
+                <div className="pt-16 flex justify-between items-start">
+                    <div className="flex gap-4 flex-wrap">
                         <div className="px-4 py-2 rounded-md border border-zinc-800 bg-purple-600">
                             <a className="text-gray-50 font-bold" href="">All</a>
                         </div>
@@ -39,17 +39,16 @@ export function TrendingCategory() {
                     </div>
                     <fieldset className="relative flex items-center justify-center">
                         <label className="text-gray-50 absolute left-4">Trending</label>
-                        <select placeholder="Trending" className="text-gray-50 px-16 py-2 bg-zinc-950 border rounded-md border-zinc-800 placeholder:text-gray-50">Trending</select>
+                        <select disabled placeholder="Trending" className="text-gray-50 px-16 py-2 bg-zinc-950 border rounded-md border-zinc-800 placeholder:text-gray-50">Trending</select>
                     </fieldset>
                 </div>
-                <div className="pt-8 grid grid-cols-4 max-lg:grid-cols-3 gap-4">
+                <div className="pt-8 grid grid-cols-4 gap-4 max-lg:grid-cols-2 max-sm:grid-cols-1">
                     <div className="bg-zinc-950 shadow-md p-4 rounded-lg space-y-4">
-                        <div className="relative">
-                            <img className="rounded-lg" src={Cyberpunk} alt="" />
+                        <div className="relative h-72">
+                            <img className="rounded-lg w-full h-full object-cover" src={Cyberpunk} alt="" />
                             <div className="absolute top-4 right-4 bg-zinc-950 p-1 flex gap-1 rounded-md items-center">
                                 <Flame strokeWidth={1} size={16} />
                                 <span className="text-sm text-gray-400">187</span>
-
                             </div>
                         </div>
                         <div className="flex items-start justify-between gap-4 w-full">
@@ -57,7 +56,7 @@ export function TrendingCategory() {
                             <MoreHorizontal />
                         </div>
                         <hr className='border w-full border-zinc-800' />
-                        <div className="flex items-center justify-between gap-4 w-full">
+                        <div className="flex items-center justify-between gap-4 w-full max-xl:flex-col">
                             <div className='flex gap-4 items-center'>
                                 <img width={40} src={BlockChain} />
                                 <div className='flex flex-col w-full'>
@@ -71,8 +70,8 @@ export function TrendingCategory() {
                     </div>
 
                     <div className="bg-zinc-950 shadow-md p-4 rounded-lg space-y-4">
-                        <div className="relative">
-                            <img className="rounded-lg" src={FaceEvil} alt="" />
+                        <div className="relative h-72">
+                            <img className="rounded-lg w-full h-full object-cover" src={FaceEvil} alt="" />
                             <div className="absolute top-4 right-4 bg-zinc-950 p-1 flex gap-1 rounded-md items-center">
                                 <Flame strokeWidth={1} size={16} />
                                 <span className="text-sm text-gray-400">187</span>
@@ -84,8 +83,8 @@ export function TrendingCategory() {
                             <MoreHorizontal />
                         </div>
                         <hr className='border w-full border-zinc-800' />
-                        <div className="flex items-center justify-between gap-4 w-full">
-                            <div className='flex gap-4 items-center'>
+                        <div className="flex items-center justify-between gap-4 w-full max-xl:flex-col">
+                            <div className='flex gap-4 items-center '>
                                 <img width={40} src={BlockChain} />
                                 <div className='flex flex-col w-full'>
                                     <div className='flex flex-col w-full items-start'>
@@ -110,7 +109,7 @@ export function TrendingCategory() {
                             <MoreHorizontal />
                         </div>
                         <hr className='border w-full border-zinc-800' />
-                        <div className="flex items-center justify-between gap-4 w-full">
+                        <div className="flex items-center justify-between gap-4 w-full max-xl:flex-col">
                             <div className='flex gap-4 items-center'>
                                 <img width={40} src={BlockChain} />
                                 <div className='flex flex-col w-full'>
@@ -137,7 +136,7 @@ export function TrendingCategory() {
                             <MoreHorizontal />
                         </div>
                         <hr className='border w-full border-zinc-800' />
-                        <div className="flex items-center justify-between gap-4 w-full">
+                        <div className="flex items-center justify-between gap-4 w-full max-xl:flex-col">
                             <div className='flex gap-4 items-center'>
                                 <img width={40} src={BlockChain} />
                                 <div className='flex flex-col w-full'>

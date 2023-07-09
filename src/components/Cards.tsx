@@ -26,7 +26,7 @@ export function CardsHots() {
         },
         tablet: {
             breakpoint: { max: 1024, min: 464 },
-            items: 3,
+            items: 1,
             partialVisibilityGutter: 30,
         },
         mobile: {
@@ -63,7 +63,7 @@ export function CardsHots() {
                 autoPlay={false}
                 className="overflow-hidden w-[1344px]"
             >
-                <div className='bg-[#0f0f0f] shadow-lg p-4 rounded-sm w-96 z-10 space-y-4'>
+                <div className='bg-[#0f0f0f] shadow-lg p-4 rounded-sm w-96 z-10 space-y-4 max-lg:items-center'>
                     <div className='flex gap-4'>
                         <div className="rounded-full border-2 h-12 w-12 relative overflow-hidden">
                             <img className="w-full h-full rounded-lg absolute inset-0" src={People1} />

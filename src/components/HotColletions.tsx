@@ -3,7 +3,7 @@ import { CardsHots } from "./Cards";
 
 export function HotColletions() {
     return (
-        <section className="relative py-32 border-t border-zinc-800">
+        <section className="relative py-32 border-t border-zinc-800" id="colletions">
             <div className="container">
                 <div className="text-center">
                     <Title size="xl" color="white" weight="bold">🔥 Hot Colletions</Title>

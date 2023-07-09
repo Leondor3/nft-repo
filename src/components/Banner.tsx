@@ -8,7 +8,7 @@ import Neon from '../assets/neon.png';
 
 export function Banner() {
     return (
-        <section className="relative py-32">
+        <section className="relative py-32" id="home">
             <div className="container">
                 <div className="flex justify-between h-full max-xl:flex-col max-xl:gap-16">
                     <div className="h-full flex flex-col items-start justify-start text-left space-y-8 w-1/2 z-40 max-xl:w-full">

@@ -2,11 +2,13 @@ import { useState, useEffect } from "react";
 import BlockChain from '../assets/blockchain.png'
 import { Button } from ".";
 import { SunIcon } from "lucide-react";
-
+import Hamburger from 'hamburger-react'
+import { Navigation } from "./Navigation";
+import { Login } from "./Login/login";
 
 export function Header() {
 
-    const [sticky, setSticky] = useState(false)
+    const [sticky, setSticky] = useState(false);
 
     const handleStickyNavbar = () => {
         if (window.scrollY >= 80) {
@@ -21,7 +23,7 @@ export function Header() {
     });
 
     return (
-        <header className={`header h-20 top-0 left-0 z-40 flex w-full items-center bg-transparent border-bottom ${sticky
+        <header className={`header h-20  top-0 left-0 z-50 flex w-full items-center bg-transparent border-bottom ${sticky
             ? "!fixed !z-[9999] shadow-sticky backdrop-blur-sm !transition !bg-primary !bg-opacity-20"
             : "absolute"
             }`}>
@@ -32,26 +34,9 @@ export function Header() {
                             <img width={48} src={BlockChain} /> NFTL25
                         </a>
                     </div>
-                    <nav className="flex items-center px-4 gap-4 ">
-                        {[
-                            ["Home", "#home"],
-                            ["About Us", "#about"],
-                            ["Explore", "#about"],
-                            ["Blog", "#technology"],
-                            ["Support", "#experiences"],
-                            ["Contact", "#experiences"],
-                        ].map(([title, url]) => (
-                            <a
-                                href={url}
-                                className="rounded-lg px-3 py-2 text-white font-medium hover:text-purple-400 transition text-base"
-                            >
-                                {title}
-                            </a>
-                        ))}
-                    </nav>
-                    <div className="flex gap-4 items-center">
-                        <Button color="violet">Sign In</Button>
-                        <SunIcon />
+                    <div className="flex justify-end gap-4">
+                        <Navigation />
+                        <Login />
                     </div>
                 </div>
             </div>

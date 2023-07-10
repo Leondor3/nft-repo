@@ -23,7 +23,7 @@ export function NavigationDesktop({ title, url }: NavigationDesktopProps) {
                         }}
                         key={url}
                         to={url}
-                        className="rounded-lg px-3 py-2 text-white font-medium hover:text-purple-400 transition text-base"
+                        className="rounded-lg px-3 py-2 font-medium hover:text-purple-500 transition text-base"
                     >
                         {title}
                     </Link>

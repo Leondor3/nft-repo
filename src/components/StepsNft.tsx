@@ -32,7 +32,7 @@ export function Steps() {
         <section className="relative pt-32 pb-32 ">
             <div className="container">
                 <div>
-                    <Title size="xl" color="white" theme="h1">Step By Step Create and sell your Nft</Title>
+                    <Title size="xl" color="white" theme="h1" className='max-sm:text-4xl'>Step By Step Create and sell your Nft</Title>
                     <div className="pt-16 gap-8 grid grid-cols-4 max-lg:grid-cols-3 max-lg:gap-4 max-md:grid-cols-2 max-sm:grid-cols-1">
                         <div className="flex items-center max-sm:flex-col max-lg:gap-8">
                             <div className="flex flex-col space-y-4 items-center">

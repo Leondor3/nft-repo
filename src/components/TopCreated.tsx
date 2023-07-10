@@ -18,21 +18,21 @@ import Reptil2 from '/images/reptil-2.jpg'
 import Reptil3 from '/images/reptil-3.jpg'
 import Reptil4 from '/images/reptil-4.jpg'
 import Coins from '/images/coins-ethereum.png'
+
 export function TopCreated() {
     return (
         <>
-
             <section className="relative pt-32 pb-16" id="top-creators">
                 <div className="container">
                     <div className="flex flex-col space-y-4">
                         <div className="flex items-start justify-between max-xl:flex-col max-xl:gap-6">
-                            <Title className="w-[600px] " theme="h1" size="xl" color="white">Unveiling NFT's Finest: Discover the
+                            <Title className="w-[600px] max-sm:text-4xl max-sm:w-full" theme="h1" size="xl" color="white">Unveiling NFT's Finest: Discover the
                                 <h1 className="bg-text-gradient bg-clip-text font-bold text-transparent inline-flex">
                                     Top Creators
                                 </h1></Title >
                             <Title className="flex-1" theme="base" size="base" color="gray">Explore their captivating portfolios and embrace a world where innovation meets imagination. Elevate your NFT experience and immerse yourself in the brilliance of our esteemed Top Creators.</Title>
                             <a className="text-gray-50 underline flex gap-2">
-                                <span>Explore All</span>
+                                <a href="/all-creates">Explore All</a>
                                 <ArrowRight />
                             </a>
                         </div>

@@ -9,11 +9,11 @@ export function CallNFT() {
                     <div className="bg-hero-pattern absolute bottom-0 w-full h-full left-0" />
                     <div className="flex max-xl:flex-col">
                         <div className="flex flex-col space-y-8 z-40 relative">
-                            <Title size="xl" color="white" theme="h1">
+                            <Title size="xl" color="white" theme="h1" className='max-sm:text-4xl'>
                                 Discover, create and sell 
                                 <h1 className="bg-text-gradient bg-clip-text font-bold text-transparent">your own NFT</h1>
                             </Title>
-                            <div className="flex gap-4">
+                            <div className="flex gap-4 max-sm:flex-col">
                                 <Button className="flex gap-2 items-center" color="violet">
                                     <span className="font-bold">Explore Now</span>
                                     <MoveUpRightIcon size={16} />

@@ -2,21 +2,19 @@ export function Footer() {
     return (
         <section className="py-16 pb-40 relative">
             <div className="container">
-                <div className="flex justify-between">
-                    <div className="flex flex-col space-y-8">
-                        <p className="text-body-color w-96">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                            lobortis.
-                        </p>
-                    </div>
-                    <div className="grid grid-cols-3 gap-8">
+                <div className="flex justify-between max-md:flex-col max-md:gap-16">
+                    <p className="text-body-color w-96 max-md:w-full">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                        lobortis.
+                    </p>
+                    <div className="grid grid-cols-3 gap-8 max-md:grid-cols-2">
                         <div className="">
                             <ul className="flex flex-col gap-4">
                                 <span className="text-white text-2xl font-bold mb-4">
                                     Useful Links
                                 </span>
                                 <li className="text-body-color">Blog</li>
-                                <li className="text-body-color">Pricing</li>
+                                <li className="text-body-color">Colletions</li>
                                 <li className="text-body-color">About</li>
                             </ul>
                         </div>
@@ -44,8 +42,8 @@ export function Footer() {
                 </div>
                 <div className="text-center border-t border-zinc-800 absolute left-0 right-0 bottom-0">
                     <div className="container">
-                        <div className="flex py-4 justify-between">
-                            <span>2023</span>
+                        <div className="flex py-4 justify-between max-md:flex-col max-md:gap-8">
+                            <span>&copy; 2023</span>
                             <div className="space-x-4">
                                 <a href="">Privacy Policy</a>
                                 <a>Terms of Services</a>

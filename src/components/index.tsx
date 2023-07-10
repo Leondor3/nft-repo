@@ -55,6 +55,7 @@ export const Title = w.p(``, {
   variants: {
     size: {
       base: 'text-base',
+      lg: 'text-4xl',
       xl: 'text-7xl',
     },
     weight: {

@@ -13,14 +13,14 @@ export function Banner() {
                 <div className="flex justify-between h-full max-xl:flex-col max-xl:gap-16">
                     <div className="h-full flex flex-col items-start justify-start text-left space-y-8 w-1/2 z-40 max-xl:w-full">
                         <div className="flex flex-col space-y-4 max-xl:w-full">
-                            <Title color="white" size="xl" theme="h1">Discover, Collect, and sell
+                            <Title color="white" size="xl" theme="h1" className="max-sm:text-4xl">Discover, Collect, and sell
                                 <span className="bg-text-gradient bg-clip-text font-bold text-transparent"> NFT
                                 </span>
                             </Title>
                             <Title className="w-[550px] max-xl:w-full" color="gray" size="base" theme="base">Discover a world where art and technology intertwine, as we bring you a curated collection of unique and mesmerizing NFTs. Our website is your gateway to a diverse array of digital artwork, each piece crafted with passion and innovation.</Title>
                         </div>
                         <Button color="violet" size="xl">Get Started</Button>
-                        <div className="grid grid-cols-3 gap-16">
+                        <div className="grid grid-cols-3 gap-16 max-sm:grid-cols-1">
                             <div className="flex flex-col items-start">
                                 <h1 className="text-gray-50 font-bold text-2xl">240K+</h1>
                                 <span className="text-gray-200">Total Sales</span>
